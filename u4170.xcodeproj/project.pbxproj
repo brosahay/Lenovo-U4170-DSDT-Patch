@@ -7,15 +7,122 @@
 	objects = {
 
 /* Begin PBXFileReference section */
+		03210DEF1E7EE26F00DCD1A4 /* config.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = config.plist; sourceTree = "<group>"; };
+		03210DF11E7EE29400DCD1A4 /* rebuild-kext-cache.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "rebuild-kext-cache.sh"; sourceTree = "<group>"; };
+		03210DF31E7EE29400DCD1A4 /* VoodooHDA-uninstall.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "VoodooHDA-uninstall.sh"; sourceTree = "<group>"; };
+		03210DF41E7EE33C00DCD1A4 /* SSDT-HACK.dsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = "SSDT-HACK.dsl"; sourceTree = "<group>"; };
+		03210DF51E7EE33C00DCD1A4 /* Backlight.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Backlight.plist; sourceTree = "<group>"; };
+		03210DF61E7EE33C00DCD1A4 /* download.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = download.sh; sourceTree = "<group>"; };
+		03210DF71E7EE33C00DCD1A4 /* install_downloads.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = install_downloads.sh; sourceTree = "<group>"; };
+		03210DF81E7EE33C00DCD1A4 /* install_tools.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = install_tools.sh; sourceTree = "<group>"; };
+		03210DF91E7EE33C00DCD1A4 /* mount_efi.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = mount_efi.sh; sourceTree = "<group>"; };
+		03210DFA1E7EE33C00DCD1A4 /* patch_backlight.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = patch_backlight.sh; sourceTree = "<group>"; };
+		03210DFB1E7EE33C00DCD1A4 /* patch_hda.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = patch_hda.sh; sourceTree = "<group>"; };
+		03210DFC1E7EE33C00DCD1A4 /* print_version.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = print_version.sh; sourceTree = "<group>"; };
+		03210DFD1E7EE33C00DCD1A4 /* update_config.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = update_config.sh; sourceTree = "<group>"; };
+		03210DFE1E7EE33C00DCD1A4 /* makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = makefile; sourceTree = "<group>"; };
+		03210E001E7EE34400DCD1A4 /* tag */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = tag; sourceTree = "<group>"; };
+		03210E011E7EE34400DCD1A4 /* zlib */ = {isa = PBXFileReference; lastKnownFileType = text.script.perl; path = zlib; sourceTree = "<group>"; };
+		03210E031E7EE37000DCD1A4 /* readme.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = readme.txt; sourceTree = "<group>"; };
+		03210E051E7EE40300DCD1A4 /* binpatch.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = binpatch.txt; sourceTree = "<group>"; };
+		03210E061E7EE40300DCD1A4 /* hdaconfig.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = hdaconfig.txt; sourceTree = "<group>"; };
+		03210E071E7EE40300DCD1A4 /* layout3.xml.zlib */ = {isa = PBXFileReference; lastKnownFileType = file; path = layout3.xml.zlib; sourceTree = "<group>"; };
+		03210E081E7EE40300DCD1A4 /* Platforms.xml.zlib */ = {isa = PBXFileReference; lastKnownFileType = text; path = Platforms.xml.zlib; sourceTree = "<group>"; };
+		03210E091E7EE40300DCD1A4 /* README:LEIA-ME.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = "README:LEIA-ME.rtf"; sourceTree = "<group>"; };
 		032E547B1E7ED0AF00E71800 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		032E547C1E7ED1B100E71800 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		032E547E1E7EE17D00E71800 /* DSDT.aml */ = {isa = PBXFileReference; lastKnownFileType = file; path = DSDT.aml; sourceTree = "<group>"; };
+		032E547F1E7EE17D00E71800 /* SSDT-0.aml */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SSDT-0.aml"; sourceTree = "<group>"; };
+		032E54801E7EE17D00E71800 /* SSDT-1.aml */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SSDT-1.aml"; sourceTree = "<group>"; };
+		032E54811E7EE17D00E71800 /* SSDT-2.aml */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SSDT-2.aml"; sourceTree = "<group>"; };
+		032E54821E7EE17D00E71800 /* SSDT-3.aml */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SSDT-3.aml"; sourceTree = "<group>"; };
+		032E54831E7EE17D00E71800 /* SSDT-5.aml */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SSDT-5.aml"; sourceTree = "<group>"; };
+		032E54841E7EE17D00E71800 /* SSDT-10.aml */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SSDT-10.aml"; sourceTree = "<group>"; };
+		032E54851E7EE17D00E71800 /* SSDT-11.aml */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SSDT-11.aml"; sourceTree = "<group>"; };
+		032E54861E7EE17D00E71800 /* SSDT-12.aml */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SSDT-12.aml"; sourceTree = "<group>"; };
+		032E54871E7EE19500E71800 /* reference.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = reference.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
+		03210DF01E7EE29400DCD1A4 /* VoodooHDA */ = {
+			isa = PBXGroup;
+			children = (
+				03210DF11E7EE29400DCD1A4 /* rebuild-kext-cache.sh */,
+				03210DF31E7EE29400DCD1A4 /* VoodooHDA-uninstall.sh */,
+			);
+			path = VoodooHDA;
+			sourceTree = "<group>";
+		};
+		03210DFF1E7EE34400DCD1A4 /* tools */ = {
+			isa = PBXGroup;
+			children = (
+				03210E001E7EE34400DCD1A4 /* tag */,
+				03210E011E7EE34400DCD1A4 /* zlib */,
+			);
+			path = tools;
+			sourceTree = "<group>";
+		};
+		03210E021E7EE37000DCD1A4 /* build */ = {
+			isa = PBXGroup;
+			children = (
+				03210E031E7EE37000DCD1A4 /* readme.txt */,
+			);
+			path = build;
+			sourceTree = "<group>";
+		};
+		03210E041E7EE40300DCD1A4 /* ALC235 */ = {
+			isa = PBXGroup;
+			children = (
+				03210E051E7EE40300DCD1A4 /* binpatch.txt */,
+				03210E061E7EE40300DCD1A4 /* hdaconfig.txt */,
+				03210E071E7EE40300DCD1A4 /* layout3.xml.zlib */,
+				03210E081E7EE40300DCD1A4 /* Platforms.xml.zlib */,
+				03210E091E7EE40300DCD1A4 /* README:LEIA-ME.rtf */,
+			);
+			name = ALC235;
+			path = tools/ALC235;
+			sourceTree = "<group>";
+		};
 		032E54701E7ED04800E71800 = {
 			isa = PBXGroup;
 			children = (
+				032E547C1E7ED1B100E71800 /* LICENSE */,
+				03210DFE1E7EE33C00DCD1A4 /* makefile */,
+				03210DF41E7EE33C00DCD1A4 /* SSDT-HACK.dsl */,
 				032E547B1E7ED0AF00E71800 /* README.md */,
+				03210DF51E7EE33C00DCD1A4 /* Backlight.plist */,
+				03210DEF1E7EE26F00DCD1A4 /* config.plist */,
+				03210DF61E7EE33C00DCD1A4 /* download.sh */,
+				03210DF71E7EE33C00DCD1A4 /* install_downloads.sh */,
+				03210DF81E7EE33C00DCD1A4 /* install_tools.sh */,
+				03210DF91E7EE33C00DCD1A4 /* mount_efi.sh */,
+				03210DFA1E7EE33C00DCD1A4 /* patch_backlight.sh */,
+				03210DFB1E7EE33C00DCD1A4 /* patch_hda.sh */,
+				03210DFC1E7EE33C00DCD1A4 /* print_version.sh */,
+				03210DFD1E7EE33C00DCD1A4 /* update_config.sh */,
+				03210E041E7EE40300DCD1A4 /* ALC235 */,
+				03210E021E7EE37000DCD1A4 /* build */,
+				032E547D1E7ED1B600E71800 /* native_u4170 */,
+				03210DFF1E7EE34400DCD1A4 /* tools */,
+				03210DF01E7EE29400DCD1A4 /* VoodooHDA */,
 			);
+			sourceTree = "<group>";
+		};
+		032E547D1E7ED1B600E71800 /* native_u4170 */ = {
+			isa = PBXGroup;
+			children = (
+				032E547E1E7EE17D00E71800 /* DSDT.aml */,
+				032E547F1E7EE17D00E71800 /* SSDT-0.aml */,
+				032E54801E7EE17D00E71800 /* SSDT-1.aml */,
+				032E54811E7EE17D00E71800 /* SSDT-2.aml */,
+				032E54821E7EE17D00E71800 /* SSDT-3.aml */,
+				032E54831E7EE17D00E71800 /* SSDT-5.aml */,
+				032E54841E7EE17D00E71800 /* SSDT-10.aml */,
+				032E54851E7EE17D00E71800 /* SSDT-11.aml */,
+				032E54871E7EE19500E71800 /* reference.txt */,
+				032E54861E7EE17D00E71800 /* SSDT-12.aml */,
+			);
+			name = native_u4170;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
