@@ -29,6 +29,7 @@
 		03210E071E7EE40300DCD1A4 /* layout3.xml.zlib */ = {isa = PBXFileReference; lastKnownFileType = file; path = layout3.xml.zlib; sourceTree = "<group>"; };
 		03210E081E7EE40300DCD1A4 /* Platforms.xml.zlib */ = {isa = PBXFileReference; lastKnownFileType = text; path = Platforms.xml.zlib; sourceTree = "<group>"; };
 		03210E091E7EE40300DCD1A4 /* README:LEIA-ME.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = "README:LEIA-ME.rtf"; sourceTree = "<group>"; };
+		03210E0A1E7EF41C00DCD1A4 /* patch_power.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = patch_power.sh; sourceTree = "<group>"; };
 		032E547B1E7ED0AF00E71800 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		032E547C1E7ED1B100E71800 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		032E547E1E7EE17D00E71800 /* DSDT.aml */ = {isa = PBXFileReference; lastKnownFileType = file; path = DSDT.aml; sourceTree = "<group>"; };
@@ -86,6 +87,7 @@
 		032E54701E7ED04800E71800 = {
 			isa = PBXGroup;
 			children = (
+				03210E0A1E7EF41C00DCD1A4 /* patch_power.sh */,
 				032E547C1E7ED1B100E71800 /* LICENSE */,
 				03210DFE1E7EE33C00DCD1A4 /* makefile */,
 				03210DF41E7EE33C00DCD1A4 /* SSDT-HACK.dsl */,
