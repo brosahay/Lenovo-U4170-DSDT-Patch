@@ -24,24 +24,22 @@
 		03210E001E7EE34400DCD1A4 /* tag */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = tag; sourceTree = "<group>"; };
 		03210E011E7EE34400DCD1A4 /* zlib */ = {isa = PBXFileReference; lastKnownFileType = text.script.perl; path = zlib; sourceTree = "<group>"; };
 		03210E031E7EE37000DCD1A4 /* readme.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = readme.txt; sourceTree = "<group>"; };
-		03210E051E7EE40300DCD1A4 /* binpatch.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = binpatch.txt; sourceTree = "<group>"; };
-		03210E061E7EE40300DCD1A4 /* hdaconfig.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = hdaconfig.txt; sourceTree = "<group>"; };
-		03210E071E7EE40300DCD1A4 /* layout3.xml.zlib */ = {isa = PBXFileReference; lastKnownFileType = file; path = layout3.xml.zlib; sourceTree = "<group>"; };
-		03210E081E7EE40300DCD1A4 /* Platforms.xml.zlib */ = {isa = PBXFileReference; lastKnownFileType = text; path = Platforms.xml.zlib; sourceTree = "<group>"; };
-		03210E091E7EE40300DCD1A4 /* README:LEIA-ME.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = "README:LEIA-ME.rtf"; sourceTree = "<group>"; };
 		03210E0A1E7EF41C00DCD1A4 /* patch_power.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = patch_power.sh; sourceTree = "<group>"; };
 		032E547B1E7ED0AF00E71800 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		032E547C1E7ED1B100E71800 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		032E547E1E7EE17D00E71800 /* DSDT.aml */ = {isa = PBXFileReference; lastKnownFileType = file; path = DSDT.aml; sourceTree = "<group>"; };
-		032E547F1E7EE17D00E71800 /* SSDT-0.aml */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SSDT-0.aml"; sourceTree = "<group>"; };
-		032E54801E7EE17D00E71800 /* SSDT-1.aml */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SSDT-1.aml"; sourceTree = "<group>"; };
-		032E54811E7EE17D00E71800 /* SSDT-2.aml */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SSDT-2.aml"; sourceTree = "<group>"; };
-		032E54821E7EE17D00E71800 /* SSDT-3.aml */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SSDT-3.aml"; sourceTree = "<group>"; };
-		032E54831E7EE17D00E71800 /* SSDT-5.aml */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SSDT-5.aml"; sourceTree = "<group>"; };
-		032E54841E7EE17D00E71800 /* SSDT-10.aml */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SSDT-10.aml"; sourceTree = "<group>"; };
-		032E54851E7EE17D00E71800 /* SSDT-11.aml */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SSDT-11.aml"; sourceTree = "<group>"; };
-		032E54861E7EE17D00E71800 /* SSDT-12.aml */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SSDT-12.aml"; sourceTree = "<group>"; };
-		032E54871E7EE19500E71800 /* reference.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = reference.txt; sourceTree = "<group>"; };
+		033A85A81E84FE7E00E4EC8B /* ahhcd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ahhcd.plist; sourceTree = "<group>"; };
+		033A85A91E84FE7E00E4EC8B /* layout3.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = layout3.plist; sourceTree = "<group>"; };
+		033A85AA1E84FE7E00E4EC8B /* Platforms.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Platforms.plist; sourceTree = "<group>"; };
+		03E6DE0F1E803D6B00A589E0 /* DSDT.aml */ = {isa = PBXFileReference; lastKnownFileType = file; path = DSDT.aml; sourceTree = "<group>"; };
+		03E6DE101E803D6B00A589E0 /* SSDT-0.aml */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SSDT-0.aml"; sourceTree = "<group>"; };
+		03E6DE111E803D6B00A589E0 /* SSDT-1.aml */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SSDT-1.aml"; sourceTree = "<group>"; };
+		03E6DE121E803D6B00A589E0 /* SSDT-2.aml */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SSDT-2.aml"; sourceTree = "<group>"; };
+		03E6DE131E803D6B00A589E0 /* SSDT-3.aml */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SSDT-3.aml"; sourceTree = "<group>"; };
+		03E6DE141E803D6B00A589E0 /* SSDT-5.aml */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SSDT-5.aml"; sourceTree = "<group>"; };
+		03E6DE151E803D6B00A589E0 /* SSDT-10.aml */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SSDT-10.aml"; sourceTree = "<group>"; };
+		03E6DE161E803D6B00A589E0 /* SSDT-11.aml */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SSDT-11.aml"; sourceTree = "<group>"; };
+		03E6DE171E803D6B00A589E0 /* SSDT-12.aml */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SSDT-12.aml"; sourceTree = "<group>"; };
+		03E6DE181E803DA200A589E0 /* reference.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = reference.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -74,15 +72,12 @@
 		03210E041E7EE40300DCD1A4 /* ALC235 */ = {
 			isa = PBXGroup;
 			children = (
-				03210E051E7EE40300DCD1A4 /* binpatch.txt */,
-				03210E061E7EE40300DCD1A4 /* hdaconfig.txt */,
-				03210E071E7EE40300DCD1A4 /* layout3.xml.zlib */,
-				03210E081E7EE40300DCD1A4 /* Platforms.xml.zlib */,
-				03210E091E7EE40300DCD1A4 /* README:LEIA-ME.rtf */,
+				033A85A81E84FE7E00E4EC8B /* ahhcd.plist */,
+				033A85A91E84FE7E00E4EC8B /* layout3.plist */,
+				033A85AA1E84FE7E00E4EC8B /* Platforms.plist */,
 			);
-			name = ALC235;
-			path = tools/ALC235;
-			sourceTree = "<group>";
+			path = ALC235;
+			sourceTree = SOURCE_ROOT;
 		};
 		032E54701E7ED04800E71800 = {
 			isa = PBXGroup;
@@ -102,29 +97,29 @@
 				03210DFB1E7EE33C00DCD1A4 /* patch_hda.sh */,
 				03210DFC1E7EE33C00DCD1A4 /* print_version.sh */,
 				03210DFD1E7EE33C00DCD1A4 /* update_config.sh */,
+				03E6DE0E1E803D2700A589E0 /* native_u4170 */,
 				03210E041E7EE40300DCD1A4 /* ALC235 */,
 				03210E021E7EE37000DCD1A4 /* build */,
-				032E547D1E7ED1B600E71800 /* native_u4170 */,
 				03210DFF1E7EE34400DCD1A4 /* tools */,
 				03210DF01E7EE29400DCD1A4 /* VoodooHDA */,
 			);
 			sourceTree = "<group>";
 		};
-		032E547D1E7ED1B600E71800 /* native_u4170 */ = {
+		03E6DE0E1E803D2700A589E0 /* native_u4170 */ = {
 			isa = PBXGroup;
 			children = (
-				032E547E1E7EE17D00E71800 /* DSDT.aml */,
-				032E547F1E7EE17D00E71800 /* SSDT-0.aml */,
-				032E54801E7EE17D00E71800 /* SSDT-1.aml */,
-				032E54811E7EE17D00E71800 /* SSDT-2.aml */,
-				032E54821E7EE17D00E71800 /* SSDT-3.aml */,
-				032E54831E7EE17D00E71800 /* SSDT-5.aml */,
-				032E54841E7EE17D00E71800 /* SSDT-10.aml */,
-				032E54851E7EE17D00E71800 /* SSDT-11.aml */,
-				032E54871E7EE19500E71800 /* reference.txt */,
-				032E54861E7EE17D00E71800 /* SSDT-12.aml */,
+				03E6DE181E803DA200A589E0 /* reference.txt */,
+				03E6DE0F1E803D6B00A589E0 /* DSDT.aml */,
+				03E6DE101E803D6B00A589E0 /* SSDT-0.aml */,
+				03E6DE111E803D6B00A589E0 /* SSDT-1.aml */,
+				03E6DE121E803D6B00A589E0 /* SSDT-2.aml */,
+				03E6DE131E803D6B00A589E0 /* SSDT-3.aml */,
+				03E6DE141E803D6B00A589E0 /* SSDT-5.aml */,
+				03E6DE151E803D6B00A589E0 /* SSDT-10.aml */,
+				03E6DE161E803D6B00A589E0 /* SSDT-11.aml */,
+				03E6DE171E803D6B00A589E0 /* SSDT-12.aml */,
 			);
-			name = native_u4170;
+			path = native_u4170;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -8,7 +8,9 @@ Please refer to this guide thread on tonymacx86.com for a step-by-step process, 
 
 CREDITS:
 [kylec](https://www.tonymacx86.com/members/kylec.76344/)
+
 [RehabMan](https://www.tonymacx86.com/members/rehabman.429483/)
+
 [Reference Thread](https://www.tonymacx86.com/threads/lenovo-s41-on-10-11-el-capitan.172560/)
 ### Change Log:
 

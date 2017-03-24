@@ -209,7 +209,7 @@ fi
 
 # USBXHC_u430 is mostly specific to 10.11, but it does inject non-removable=yes
 # for the touchscreen
-install_kext USBXHC_u430.kext
+#install_kext USBXHC_u430.kext
 
 #if [[ $MINOR_VER -ge 11 ]]; then
     # create custom AppleBacklightInjector.kext and install

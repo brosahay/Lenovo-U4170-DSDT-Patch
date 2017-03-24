@@ -159,7 +159,7 @@ function createAppleHDAInjector_HCD()
 
 if [[ "$1" == "" ]]; then
     echo Usage: patch_hda.sh {codec}
-    echo Example: patch_hda.sh ALC892
+    echo Example: patch_hda.sh ALC235
     exit
 fi
 
