@@ -50,10 +50,10 @@ function install_kext
     if [ "$1" != "" ]; then
         echo installing $1 to $KEXTDEST
         #$SUDO rm -Rf $SLE/`basename $1` $KEXTDEST/`basename $1`
-        $SUDO mv  $SLE/'basename $1' $SLE/'basename $1.bak'
-        $TAG -a Red $SLE/'basename $1.bak'
+        $SUDO mv  $SLE/`basename $1` $SLE/`basename $1.bak`
+        $TAG -a Red $SLE/`basename $1`.bak
         $SUDO mv $KEXTDEST/`basename $1` $KEXTDEST/`basename $1.bak`
-        $TAG -a Red $KEXTDEST/'basename $1.bak'
+        $TAG -a Red $KEXTDEST/`basename $1.bak`
         $SUDO cp -Rf $1 $KEXTDEST
         $TAG -a Gray $KEXTDEST/`basename $1`
     fi
@@ -62,7 +62,7 @@ function install_kext
 function install_app
 {
     if [ "$1" != "" ]; then
-        echo installing $1 to /Applications
+        echo installing $1 to /Applications/Utilities
         $SUDO rm -Rf /Applications/Utilities/`basename $1`
         $SUDO cp -Rf $1 /Applications/Utilities
         $TAG -a Gray /Applications/Utilities/`basename $1`

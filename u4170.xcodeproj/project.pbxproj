@@ -12,7 +12,7 @@
 		03210DF31E7EE29400DCD1A4 /* VoodooHDA-uninstall.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "VoodooHDA-uninstall.sh"; sourceTree = "<group>"; };
 		03210DF51E7EE33C00DCD1A4 /* Backlight.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Backlight.plist; sourceTree = "<group>"; };
 		03210DF61E7EE33C00DCD1A4 /* download.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = download.sh; sourceTree = "<group>"; };
-		03210DF71E7EE33C00DCD1A4 /* install_downloads.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = install_downloads.sh; sourceTree = "<group>"; };
+		03210DF71E7EE33C00DCD1A4 /* install_downloads.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = install_downloads.sh; sourceTree = "<group>"; usesTabs = 1; };
 		03210DF81E7EE33C00DCD1A4 /* install_tools.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = install_tools.sh; sourceTree = "<group>"; };
 		03210DF91E7EE33C00DCD1A4 /* mount_efi.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = mount_efi.sh; sourceTree = "<group>"; };
 		03210DFA1E7EE33C00DCD1A4 /* patch_backlight.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = patch_backlight.sh; sourceTree = "<group>"; };
