@@ -7,6 +7,35 @@ DefinitionBlock("", "SSDT", 2, "hack", "IGPU", 0)
     External(RMCF.TYPE, IntObj)
     External(RMCF.HIGH, IntObj)
 
+//
+// Backlight control
+//
+
+    Device(PNLF)
+    {
+        Name(_ADR, Zero)
+        Name(_HID, EisaId ("APP0002"))
+        Name(_CID, "backlight")
+        Name(_UID, 10)
+        Name(_STA, 0x0B)
+        Name(RMCF, Package()
+        {
+            "PWMMax", 0,
+        })
+        Method(_INI)
+        {
+            // disable discrete graphics (Nvidia) if it is present
+            External(\_SB.PCI0.RP05.PEGP._OFF, MethodObj)
+            If (CondRefOf(\_SB.PCI0.RP05.PEGP._OFF))
+            {
+                \_SB.PCI0.RP05.PEGP._OFF()
+            }
+        }
+    }
+
+//
+// RehabMan Patch
+//
     Scope(_SB.PCI0.IGPU)
     {
         // need the device-id from PCI_config to inject correct properties
