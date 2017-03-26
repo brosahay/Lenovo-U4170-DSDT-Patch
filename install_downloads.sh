@@ -9,7 +9,7 @@ TAG=tag_file
 TAGCMD=`pwd`/tools/tag
 SLE=/System/Library/Extensions
 LE=/Library/Extensions
-EXCEPTIONS="Sensors|FakePCIID_BCM57XX|FakePCIID_Intel_GbX|FakePCIID_Intel_HDMI|FakePCIID_XHCIMux|BrcmPatchRAM|BrcmBluetoothInjector|BrcmFirmwareData|USBInjectAll"
+EXCEPTIONS="Sensors|FakePCIID_Intel_GbX|FakePCIID_Intel_HDMI|BrcmPatchRAM|BrcmBluetoothInjector|BrcmFirmwareData|USBInjectAll"
 
 # extract minor version (eg. 10.9 vs. 10.10 vs. 10.11)
 MINOR_VER=$([[ "$(sw_vers -productVersion)" =~ [0-9]+\.([0-9]+) ]] && echo ${BASH_REMATCH[1]})
@@ -174,23 +174,23 @@ if [ $? -ne 0 ]; then
     # now using IntelBacklight.kext instead of ACPIBacklight.kext
     $SUDO rm -Rf $SLE/ACPIBacklight.kext $KEXTDEST/ACPIBacklight.kext
     # since EHCI #1 is disabled, FakePCIID_XHCIMux.kext cannot be used
-    $SUDO rm -Rf $KEXTDEST/FakePCIID_XHCIMux.kext
+    #$SUDO rm -Rf $KEXTDEST/FakePCIID_XHCIMux.kext
     # deal with some renames
-    if [[ -e $KEXTDEST/FakePCIID_Broadcom_WiFi.kext ]]; then
+    #if [[ -e $KEXTDEST/FakePCIID_Broadcom_WiFi.kext ]]; then
         # remove old FakePCIID_BCM94352Z_as_BCM94360CS2.kext
-        $SUDO rm -Rf $SLE/FakePCIID_BCM94352Z_as_BCM94360CS2.kext $KEXTDEST/FakePCIID_BCM94352Z_as_BCM94360CS2.kext
-    fi
-    if [[ -e $KEXTDEST/FakePCIID_Intel_HD_Graphics.kext ]]; then
+        #$SUDO rm -Rf $SLE/FakePCIID_BCM94352Z_as_BCM94360CS2.kext $KEXTDEST/FakePCIID_BCM94352Z_as_BCM94360CS2.kext
+    #fi
+    #if [[ -e $KEXTDEST/FakePCIID_Intel_HD_Graphics.kext ]]; then
         # remove old FakePCIID_HD4600_HD4400.kext
-        $SUDO rm -Rf $SLE/FakePCIID_HD4600_HD4400.kext $KEXTDEST/FakePCIID_HD4600_HD4400.kext
-    fi
+        #$SUDO rm -Rf $SLE/FakePCIID_HD4600_HD4400.kext $KEXTDEST/FakePCIID_HD4600_HD4400.kext
+    #fi
     cd ../..
 fi
 
 # install kexts in the repo itself
 
 # patching AppleHDA
-HDA=ALC283
+HDA=ALC235
 $SUDO rm -Rf $KEXTDEST/AppleHDA_$HDA.kext
 $SUDO rm -Rf $KEXTDEST/AppleHDAHCD_$HDA.kext
 $SUDO rm -f $SLE/AppleHDA.kext/Contents/Resources/*.zml*
@@ -207,9 +207,6 @@ else
     $TAG -a Gray $SLE/AppleHDA.kext
 fi
 
-# USBXHC_u430 is mostly specific to 10.11, but it does inject non-removable=yes
-# for the touchscreen
-#install_kext USBXHC_u430.kext
 
 #if [[ $MINOR_VER -ge 11 ]]; then
     # create custom AppleBacklightInjector.kext and install
