@@ -6,13 +6,17 @@
 	<array>
 		<dict>
 			<key>AFGLowPowerState</key>
-			<data>AwAAAA==</data>
-			<key>Codec</key>
-			<string>Mirone - Realtek ALC235</string>
+			<data>
+			AwAAAA==
+			</data>
 			<key>CodecID</key>
 			<integer>283902517</integer>
 			<key>ConfigData</key>
-			<data>ASccEAEnHQABJx6gAScfkAFHHCABRx0AAUceFwFHH5ABdxwwAXcdAAF3HgABdx9AAZccQAGXHRABlx6LAZcfAAHXHFAB1x2QAdce9wHXH0ACFxxgAhcdEAIXHisCFx8BAUcMAgIXDAI=</data>
+			<data>
+			ASccEAEnHQABJx6gAScfkAFHHCABRx0AAUceFwFHH5ABdxwwAXcd
+			AAF3HgABdx9AAZccQAGXHRABlx6LAZcfAAHXHFAB1x2QAdce9wHX
+			H0ACFxxgAhcdEAIXHisCFx8BAUcMAgIXDAI=
+			</data>
 			<key>FuncGroup</key>
 			<integer>1</integer>
 			<key>LayoutID</key>

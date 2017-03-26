@@ -19,7 +19,7 @@
 		03210DFB1E7EE33C00DCD1A4 /* patch_hda.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = patch_hda.sh; sourceTree = "<group>"; };
 		03210DFC1E7EE33C00DCD1A4 /* print_version.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = print_version.sh; sourceTree = "<group>"; };
 		03210DFD1E7EE33C00DCD1A4 /* update_config.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = update_config.sh; sourceTree = "<group>"; };
-		03210DFE1E7EE33C00DCD1A4 /* makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = makefile; sourceTree = "<group>"; };
+		03210DFE1E7EE33C00DCD1A4 /* makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = makefile; sourceTree = "<group>"; usesTabs = 1; xcLanguageSpecificationIdentifier = xcode.lang.sh; };
 		03210E001E7EE34400DCD1A4 /* tag */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = tag; sourceTree = "<group>"; };
 		03210E011E7EE34400DCD1A4 /* zlib */ = {isa = PBXFileReference; lastKnownFileType = text.script.perl; path = zlib; sourceTree = "<group>"; };
 		03210E031E7EE37000DCD1A4 /* readme.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = readme.txt; sourceTree = "<group>"; };
@@ -87,7 +87,8 @@
 				033A85A91E84FE7E00E4EC8B /* layout3.plist */,
 				033A85AA1E84FE7E00E4EC8B /* Platforms.plist */,
 			);
-			path = ALC235;
+			name = ALC235;
+			path = Resources_ALC235;
 			sourceTree = SOURCE_ROOT;
 		};
 		032E54701E7ED04800E71800 = {

@@ -22,10 +22,10 @@ ifeq "$(VERSION_ERA)" "10.10-"
 else
 	INSTDIR=/Library/Extensions
 endif
-SLE=/System/Library/Extensions
+	SLE=/System/Library/Extensions
 
 # set build products
-PRODUCTS=$(BUILDDIR)/SSDT-HACK.aml $(BUILDDIR)/SSDT-ALC235.aml
+PRODUCTS=$(BUILDDIR)/SSDT-EH01.aml $(BUILDDIR)/SSDT-EH02.aml $(BUILDDIR)/SSDT-HDAU.aml $(BUILDDIR)/SSDT-IGPU.aml $(BUILDDIR)/SSDT-LPC.aml $(BUILDDIR)/SSDT-SATA.aml $(BUILDDIR)/SSDT-XOSI.aml $(BUILDDIR)/SSDT-ALC235.aml
 
 IASLFLAGS=-vw 2095 -vw 2146
 IASL=iasl
