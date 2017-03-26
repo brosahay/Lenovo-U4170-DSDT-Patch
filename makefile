@@ -32,9 +32,26 @@ IASL=iasl
 
 .PHONY: all
 all: $(PRODUCTS) $(HDAHCDINJECT) #  $(HDAINJECT)
-
-$(BUILDDIR)/SSDT-HACK.aml: ./SSDT-HACK.dsl
+$(BUILDDIR)/SSDT-EH01.aml: ./patched_dsdt/SSDT-EH01.dsl
 	$(IASL) $(IASLFLAGS) -p $@ $<
+
+$(BUILDDIR)/SSDT-EH02.aml: ./patched_dsdt/SSDT-EH02.dsl
+$(IASL) $(IASLFLAGS) -p $@ $<
+
+$(BUILDDIR)/SSDT-HDAU.aml: ./patched_dsdt/SSDT-HDAU.dsl
+$(IASL) $(IASLFLAGS) -p $@ $<
+
+$(BUILDDIR)/SSDT-IGPU.aml: ./patched_dsdt/SSDT-IGPU.dsl
+$(IASL) $(IASLFLAGS) -p $@ $<
+
+$(BUILDDIR)/SSDT-LPC.aml: ./patched_dsdt/SSDT-LPC.dsl
+$(IASL) $(IASLFLAGS) -p $@ $<
+
+$(BUILDDIR)/SSDT-SATA.aml: ./patched_dsdt/SSDT-SATA.dsl
+$(IASL) $(IASLFLAGS) -p $@ $<
+
+$(BUILDDIR)/SSDT-XOSI.aml: ./patched_dsdt/SSDT-XOSI.dsl
+$(IASL) $(IASLFLAGS) -p $@ $<
 
 $(BUILDDIR)/SSDT-ALC235.aml: ./SSDT-ALC235.dsl
 	$(IASL) $(IASLFLAGS) -p $@ $<
@@ -48,7 +65,13 @@ clean:
 .PHONY: install
 install: $(PRODUCTS)
 	$(eval EFIDIR:=$(shell sudo ./mount_efi.sh /))
-	rm -f $(EFIDIR)/EFI/CLOVER/ACPI/patched/SSDT-HACK.aml
+    rm -f $(EFIDIR)/EFI/CLOVER/ACPI/patched/SSDT-EH01.aml
+    rm -f $(EFIDIR)/EFI/CLOVER/ACPI/patched/SSDT-EH02.aml
+    rm -f $(EFIDIR)/EFI/CLOVER/ACPI/patched/SSDT-HDAU.aml
+    rm -f $(EFIDIR)/EFI/CLOVER/ACPI/patched/SSDT-IGPU.aml
+    rm -f $(EFIDIR)/EFI/CLOVER/ACPI/patched/SSDT-LPC.aml
+    rm -f $(EFIDIR)/EFI/CLOVER/ACPI/patched/SSDT-SATA.aml
+    rm -f $(EFIDIR)/EFI/CLOVER/ACPI/patched/SSDT-XOSI.aml
 	rm -f $(EFIDIR)/EFI/CLOVER/ACPI/patched/SSDT-ALC235.aml
 	rm -f $(EFIDIR)/EFI/CLOVER/ACPI/patched/DSDT.aml
 	rm -f $(EFIDIR)/EFI/CLOVER/ACPI/patched/SSDT-2.aml
@@ -56,7 +79,13 @@ install: $(PRODUCTS)
 	rm -f $(EFIDIR)/EFI/CLOVER/ACPI/patched/SSDT-4.aml
 	rm -f $(EFIDIR)/EFI/CLOVER/ACPI/patched/SSDT-5.aml
 	rm -f $(EFIDIR)/EFI/CLOVER/ACPI/patched/SSDT-7.aml
-	cp $(BUILDDIR)/SSDT-HACK.aml $(EFIDIR)/EFI/CLOVER/ACPI/patched/SSDT-HACK.aml
+	cp $(BUILDDIR)/SSDT-EH01.aml $(EFIDIR)/EFI/CLOVER/ACPI/patched/SSDT-EH01.aml
+    cp $(BUILDDIR)/SSDT-EH02.aml $(EFIDIR)/EFI/CLOVER/ACPI/patched/SSDT-EH02.aml
+    cp $(BUILDDIR)/SSDT-HDAU.aml $(EFIDIR)/EFI/CLOVER/ACPI/patched/SSDT-HDAU.aml
+    cp $(BUILDDIR)/SSDT-IGPU.aml $(EFIDIR)/EFI/CLOVER/ACPI/patched/SSDT-IGPU.aml
+    cp $(BUILDDIR)/SSDT-LPC.aml $(EFIDIR)/EFI/CLOVER/ACPI/patched/SSDT-LPC.aml
+    cp $(BUILDDIR)/SSDT-SATA.aml $(EFIDIR)/EFI/CLOVER/ACPI/patched/SSDT-SATA.aml
+    cp $(BUILDDIR)/SSDT-XOSI.aml $(EFIDIR)/EFI/CLOVER/ACPI/patched/SSDT-XOSI.aml
 	cp $(BUILDDIR)/SSDT-ALC235.aml $(EFIDIR)/EFI/CLOVER/ACPI/patched/SSDT-ALC235.aml
 
 #$(HDAINJECT) $(HDAHCDINJECT): $(RESOURCES)/*.plist ./patch_hda.sh
