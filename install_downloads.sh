@@ -49,7 +49,11 @@ function install_kext
 {
     if [ "$1" != "" ]; then
         echo installing $1 to $KEXTDEST
-        $SUDO rm -Rf $SLE/`basename $1` $KEXTDEST/`basename $1`
+        #$SUDO rm -Rf $SLE/`basename $1` $KEXTDEST/`basename $1`
+        $SUDO mv  $SLE/'basename $1' $SLE/'basename $1.bak'
+        $TAG -a Red $SLE/'basename $1.bak'
+        $SUDO mv $KEXTDEST/`basename $1` $KEXTDEST/`basename $1.bak`
+        $TAG -a Red $KEXTDEST/'basename $1.bak'
         $SUDO cp -Rf $1 $KEXTDEST
         $TAG -a Gray $KEXTDEST/`basename $1`
     fi
@@ -59,9 +63,9 @@ function install_app
 {
     if [ "$1" != "" ]; then
         echo installing $1 to /Applications
-        $SUDO rm -Rf /Applications/`basename $1`
-        $SUDO cp -Rf $1 /Applications
-        $TAG -a Gray /Applications/`basename $1`
+        $SUDO rm -Rf /Applications/Utilities/`basename $1`
+        $SUDO cp -Rf $1 /Applications/Utilities
+        $TAG -a Gray /Applications/Utilities/`basename $1`
     fi
 }
 
@@ -69,7 +73,8 @@ function install_binary
 {
     if [ "$1" != "" ]; then
         echo installing $1 to /usr/bin
-        $SUDO rm -f /usr/bin/`basename $1`
+        #$SUDO rm -f /usr/bin/`basename $1`
+        $SUDO mv /usr/bin/`basename $1` /usr/bin/`basename $1.bak`
         $SUDO cp -f $1 /usr/bin
         $TAG -a Gray /usr/bin/`basename $1`
     fi
@@ -158,7 +163,9 @@ if [ $? -ne 0 ]; then
         # 10.11 needs USBInjectAll.kext
         cd RehabMan-USBInjectAll*/Release && install_kext USBInjectAll.kext && cd ../..
         # remove BrcPatchRAM.kext just in case
-        $SUDO rm -Rf $SLE/BrcmPatchRAM.kext $KEXTDEST/BrcmPatchRAM.kext
+        #$SUDO rm -Rf $SLE/BrcmPatchRAM.kext $KEXTDEST/BrcmPatchRAM.kext
+        $SUDO mv $SLE/BrcmPatchRAM.kext $SLE/BrcmPatchRAM.kext.bak
+        $SUDO mv $KEXTDEST/BrcmPatchRAM.kext $KEXTDEST/BrcmPatchRAM.kext.bak
         # remove injector just in case
         $SUDO rm -Rf $SLE/BrcmBluetoothInjector.kext $KEXTDEST/BrcmBluetoothInjector.kext
     else

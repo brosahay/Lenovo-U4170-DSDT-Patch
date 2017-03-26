@@ -56,6 +56,7 @@
 		03210DF01E7EE29400DCD1A4 /* VoodooHDA */ = {
 			isa = PBXGroup;
 			children = (
+				9DA0E7CD1E86F7FB001B93B1 /* Resources_ALC235 */,
 				03210DF11E7EE29400DCD1A4 /* rebuild-kext-cache.sh */,
 				03210DF31E7EE29400DCD1A4 /* VoodooHDA-uninstall.sh */,
 			);
@@ -110,7 +111,6 @@
 				03210E021E7EE37000DCD1A4 /* build */,
 				03E6DE0E1E803D2700A589E0 /* native_u4170 */,
 				9D905CB91E873E2900C3133B /* patched_dsdt */,
-				9DA0E7CD1E86F7FB001B93B1 /* Resources_ALC235 */,
 				03210DFF1E7EE34400DCD1A4 /* tools */,
 				03210DF01E7EE29400DCD1A4 /* VoodooHDA */,
 			);
@@ -155,7 +155,8 @@
 				9DA0E7CF1E86F7FB001B93B1 /* layout3.plist */,
 				9DA0E7D01E86F7FB001B93B1 /* Platforms.plist */,
 			);
-			path = Resources_ALC235;
+			name = Resources_ALC235;
+			path = ../Resources_ALC235;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
