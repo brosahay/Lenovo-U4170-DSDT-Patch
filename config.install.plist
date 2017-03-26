@@ -499,7 +499,7 @@
 			<array>
 				<dict>
 					<key>Frequency</key>
-					<integer>1066</integer>
+					<real>1066</real>
 					<key>Size</key>
 					<integer>4096</integer>
 					<key>Slot</key>

@@ -39,6 +39,12 @@
 		03E6DE161E803D6B00A589E0 /* SSDT-11.aml */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SSDT-11.aml"; sourceTree = "<group>"; };
 		03E6DE171E803D6B00A589E0 /* SSDT-12.aml */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SSDT-12.aml"; sourceTree = "<group>"; };
 		03E6DE181E803DA200A589E0 /* reference.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = reference.txt; sourceTree = "<group>"; };
+		9D8C3A361E88549700323BFE /* Clover_v2.3k_r3974.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = Clover_v2.3k_r3974.zip; sourceTree = "<group>"; };
+		9D8C3A371E8854B900323BFE /* HFSPlus.efi */ = {isa = PBXFileReference; lastKnownFileType = file; path = HFSPlus.efi; sourceTree = "<group>"; };
+		9D8C3A381E8854D400323BFE /* Clover_v2.3k_r3766-Legacy-UB.pkg */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Clover_v2.3k_r3766-Legacy-UB.pkg"; sourceTree = "<group>"; };
+		9D8C3A391E8854D400323BFE /* Clover_v2.3k_r3766-UEFI-UB.pkg */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Clover_v2.3k_r3766-UEFI-UB.pkg"; sourceTree = "<group>"; };
+		9D8C3A3A1E88555500323BFE /* Clover_v2.3k_r3526.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = Clover_v2.3k_r3526.zip; sourceTree = "<group>"; };
+		9D8C3A3B1E88559E00323BFE /* SSDT-KBD0.dsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = "SSDT-KBD0.dsl"; sourceTree = "<group>"; usesTabs = 1; };
 		9D905CBA1E873E8500C3133B /* SSDT-XOSI.dsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = "SSDT-XOSI.dsl"; sourceTree = "<group>"; };
 		9D905CBB1E873EC100C3133B /* SSDT-EH01.dsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = "SSDT-EH01.dsl"; sourceTree = "<group>"; };
 		9D905CBC1E873EC100C3133B /* SSDT-EH02.dsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = "SSDT-EH02.dsl"; sourceTree = "<group>"; };
@@ -47,9 +53,6 @@
 		9D905CBF1E873EC100C3133B /* SSDT-LPC.dsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = "SSDT-LPC.dsl"; sourceTree = "<group>"; };
 		9D905CC01E873EC100C3133B /* SSDT-SATA.dsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = "SSDT-SATA.dsl"; sourceTree = "<group>"; };
 		9DA0E7CC1E86F7A3001B93B1 /* SSDT-ALC235.dsl */ = {isa = PBXFileReference; lastKnownFileType = text; name = "SSDT-ALC235.dsl"; path = "../SSDT-ALC235.dsl"; sourceTree = "<group>"; };
-		9DA0E7CE1E86F7FB001B93B1 /* ahhcd.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ahhcd.plist; sourceTree = "<group>"; };
-		9DA0E7CF1E86F7FB001B93B1 /* layout3.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = layout3.plist; sourceTree = "<group>"; };
-		9DA0E7D01E86F7FB001B93B1 /* Platforms.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Platforms.plist; sourceTree = "<group>"; };
 		9DA1B2911E8817EA00C272AA /* config.install.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = config.install.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -57,7 +60,6 @@
 		03210DF01E7EE29400DCD1A4 /* VoodooHDA */ = {
 			isa = PBXGroup;
 			children = (
-				9DA0E7CD1E86F7FB001B93B1 /* Resources_ALC235 */,
 				03210DF11E7EE29400DCD1A4 /* rebuild-kext-cache.sh */,
 				03210DF31E7EE29400DCD1A4 /* VoodooHDA-uninstall.sh */,
 			);
@@ -67,11 +69,17 @@
 		03210DFF1E7EE34400DCD1A4 /* tools */ = {
 			isa = PBXGroup;
 			children = (
+				9D8C3A381E8854D400323BFE /* Clover_v2.3k_r3766-Legacy-UB.pkg */,
+				9D8C3A391E8854D400323BFE /* Clover_v2.3k_r3766-UEFI-UB.pkg */,
+				9D8C3A371E8854B900323BFE /* HFSPlus.efi */,
+				9D8C3A361E88549700323BFE /* Clover_v2.3k_r3974.zip */,
+				9D8C3A3A1E88555500323BFE /* Clover_v2.3k_r3526.zip */,
 				03210E001E7EE34400DCD1A4 /* tag */,
 				03210E011E7EE34400DCD1A4 /* zlib */,
 			);
 			path = tools;
 			sourceTree = "<group>";
+			usesTabs = 1;
 		};
 		03210E021E7EE37000DCD1A4 /* build */ = {
 			isa = PBXGroup;
@@ -147,19 +155,9 @@
 				9D905CBF1E873EC100C3133B /* SSDT-LPC.dsl */,
 				9D905CC01E873EC100C3133B /* SSDT-SATA.dsl */,
 				9D905CBA1E873E8500C3133B /* SSDT-XOSI.dsl */,
+				9D8C3A3B1E88559E00323BFE /* SSDT-KBD0.dsl */,
 			);
 			path = patched_dsdt;
-			sourceTree = "<group>";
-		};
-		9DA0E7CD1E86F7FB001B93B1 /* Resources_ALC235 */ = {
-			isa = PBXGroup;
-			children = (
-				9DA0E7CE1E86F7FB001B93B1 /* ahhcd.plist */,
-				9DA0E7CF1E86F7FB001B93B1 /* layout3.plist */,
-				9DA0E7D01E86F7FB001B93B1 /* Platforms.plist */,
-			);
-			name = Resources_ALC235;
-			path = ../Resources_ALC235;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
