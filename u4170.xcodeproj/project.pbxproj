@@ -50,6 +50,7 @@
 		9DA0E7CE1E86F7FB001B93B1 /* ahhcd.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ahhcd.plist; sourceTree = "<group>"; };
 		9DA0E7CF1E86F7FB001B93B1 /* layout3.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = layout3.plist; sourceTree = "<group>"; };
 		9DA0E7D01E86F7FB001B93B1 /* Platforms.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Platforms.plist; sourceTree = "<group>"; };
+		9DA1B2911E8817EA00C272AA /* config.install.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = config.install.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -94,6 +95,7 @@
 		032E54701E7ED04800E71800 = {
 			isa = PBXGroup;
 			children = (
+				9DA1B2911E8817EA00C272AA /* config.install.plist */,
 				032E547C1E7ED1B100E71800 /* LICENSE */,
 				03210DFE1E7EE33C00DCD1A4 /* makefile */,
 				032E547B1E7ED0AF00E71800 /* README.md */,
